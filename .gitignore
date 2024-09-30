@@ -9,7 +9,7 @@ testing.txt
 
 __pycache__*/
 
-RDSLight/config.py
+RDSLight/RDSLightOpenai/config.py
 
 .idea
 memory.json

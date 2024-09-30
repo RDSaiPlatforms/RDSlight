@@ -1,5 +1,5 @@
-from RDSLight.core.sentiment_analyzer import SentimentAnalyzer
-from RDSLight.config import client
+from core.sentiment_analyzer import SentimentAnalyzer
+from config import client
 from colorama import init, Fore
 
 # Initialize colorama
