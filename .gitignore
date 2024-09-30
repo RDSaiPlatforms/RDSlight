@@ -10,6 +10,8 @@ testing.txt
 __pycache__*/
 
 RDSLight/RDSLightOpenai/config.py
+RDSLight/RDSLightGemini/config.py
+
 
 .idea
 memory.json
