@@ -12,6 +12,7 @@ __pycache__*/
 RDSLight/RDSLightOpenai/config.py
 RDSLight/RDSLightGemini/config.py
 
+*RDS(work).iml
 
 .idea
 memory.json
