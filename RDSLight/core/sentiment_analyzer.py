@@ -1,4 +1,4 @@
-from config import client
+from RDSLight.config import client
 
 class SentimentAnalyzer:
     def analyze_sentiment(self, text):
