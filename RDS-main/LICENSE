@@ -1,0 +1,59 @@
+Confidentiality and Limited Use License
+
+This Confidentiality and Limited Use License (the "License") governs the access to and use of the code within this private repository (the "Code"). By accessing or contributing to this repository, members (the "User") agree to the following terms and conditions:
+
+1. Confidentiality
+
+The User agrees that:
+
+- The Code and any associated files, information, or data are **confidential and proprietary** to the repository owner (the "Licensor").  
+- The User will not disclose, share, or distribute the Code, or any part thereof, to any third party, external entity, or unauthorized individual without prior written consent from the Licensor.  
+- The User will ensure that any internal modifications, improvements, or forks remain confidential and are not shared outside the organization.
+
+2. Permitted Use
+
+The User is permitted to:
+
+- Access and view the Code for internal development, research, and operational purposes within the startup.  
+- Fork the repository for development purposes, provided that all modifications and forks remain within the organization's private infrastructure and are not shared with external parties.
+
+3. Restrictions
+
+The User agrees to the following restrictions:
+
+- The Code must **not be used for commercial purposes** outside of the organization without prior written approval from the Licensor.  
+- The Code and any derivative works must **not be distributed, sublicensed, or sold** to any third parties.  
+- The User is prohibited from **decompiling, reverse engineering, or attempting to extract proprietary elements** of the Code for any purposes other than those allowed within the scope of the organization’s work.
+
+4. Intellectual Property Rights
+
+The Licensor retains all intellectual property rights to the Code, including any internal modifications, improvements, or derivatives created by the User. The User acknowledges that no ownership rights are transferred through the use or modification of the Code.
+
+5. Contributions
+
+Any contributions (e.g., through commits, forks, or pull requests) made by the User to the repository are subject to the same confidentiality and intellectual property terms as outlined in this License. The Licensor reserves the right to use, modify, and incorporate any contributions into the main repository or other works.
+
+6. Security
+
+The User agrees to:
+
+- **Implement and maintain reasonable security measures** to protect the Code from unauthorized access, including but not limited to password protection, encryption, and limiting access to authorized personnel only.  
+- Promptly notify the Licensor of any security breaches or unauthorized access to the Code.
+
+## 7. Termination
+
+This License may be terminated by the Licensor at any time for violations of the terms herein. Upon termination, the User must:
+
+- Cease all use of the Code.  
+- Delete all copies of the Code, including any modifications or forks within the User's control.
+
+8. Disclaimer of Warranties
+
+The Code is provided **"as is"**, and the Licensor makes no warranties, express or implied, regarding its functionality, accuracy, or fitness for any particular purpose.
+
+9. Governing Law
+
+This License is governed by and construed in accordance with the laws of the State of Vermont, without regard to its conflict of law provisions.
+---
+
+By accessing or contributing to this repository, the User acknowledges that they have read, understood, and agree to be bound by the terms of this License.
