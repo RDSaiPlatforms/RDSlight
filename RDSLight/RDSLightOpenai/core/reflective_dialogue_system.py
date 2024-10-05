@@ -5,11 +5,12 @@ from colorama import init, Fore
 # Initialize colorama
 init(autoreset=True)
 
+
 class ReflectiveDialogueSystem:
     def __init__(self, memory_system):
         self.memory_system = memory_system
         self.sentiment_analyzer = SentimentAnalyzer()
-        
+
         # Prompt user for GPT model selection
         self.gpt_model = self.select_gpt_model()
 
@@ -22,7 +23,7 @@ class ReflectiveDialogueSystem:
         print(Fore.YELLOW + "2. gpt-4")
         print(Fore.YELLOW + "3. gpt-4o")
 
-        #model selection
+        # model selection
         while True:
             model_choice = input(Fore.WHITE + "Enter the number corresponding to your choice (1, 2 or 3): ").strip()
             if model_choice == '1':
@@ -31,34 +32,35 @@ class ReflectiveDialogueSystem:
                 return "gpt-3.5-turbo"
             elif model_choice == '2':
                 print("\n" + "-" * 50)
-                print(Fore.RED + "Warning: gpt-4 is a large model and may cost more to use. Do you want to continue? (y/n)")
+                print(
+                    Fore.RED + "Warning: gpt-4 is a large model and may cost more to use. Do you want to continue? (y/n)")
                 print("-" * 50)
-                confirm_choice = input(Fore.WHITE + "Enter 'y' to confirm or 'n' to select another model: ").strip().lower()
+                confirm_choice = input(
+                    Fore.WHITE + "Enter 'y' to confirm or 'n' to select another model: ").strip().lower()
                 if confirm_choice == 'y':
-                        print(Fore.GREEN + "\nModel selected: gpt-4\n")
-                        print("\n" + "-" * 50)
-                        return "gpt-4"
-                
-                
+                    print(Fore.GREEN + "\nModel selected: gpt-4\n")
+                    print("\n" + "-" * 50)
+                    return "gpt-4"
+
                 print(Fore.GREEN + "\nModel selected: gpt-4\n")
 
                 print("\n" + "-" * 50)
                 return "gpt-4"
             elif model_choice == '3':
                 print("\n" + "-" * 50)
-                print(Fore.RED + "Warning: gpt-4o is a large model and may cost more to use. Do you want to continue? (y/n)")
+                print(
+                    Fore.RED + "Warning: gpt-4o is a large model and may cost more to use. Do you want to continue? (y/n)")
                 print("-" * 50)
-                confirm_choice = input(Fore.WHITE + "Enter 'y' to confirm or 'n' to select another model: ").strip().lower()
+                confirm_choice = input(
+                    Fore.WHITE + "Enter 'y' to confirm or 'n' to select another model: ").strip().lower()
                 if confirm_choice == 'y':
-                        print(Fore.GREEN + "\nModel selected: gpt-4o\n")
-                        print("\n" + "-" * 50)
-                        return "gpt-4o"
+                    print(Fore.GREEN + "\nModel selected: gpt-4o\n")
+                    print("\n" + "-" * 50)
+                    return "gpt-4o"
                 else:
                     return self.select_gpt_model()
             else:
                 print(Fore.RED + "Invalid choice, please select either '1', '2', or '3'.")
-
-
 
     def process_user_input(self, user_input):
         print("\n" + "=" * 50)
@@ -123,12 +125,13 @@ class ReflectiveDialogueSystem:
             f"Determine if the following input is a technical question related to topics like coding, math, physics, or general problem-solving. "
             f"Just return either 'technical' or 'general'.\n\nInput: '{user_input}'"
         )
-        
+
         try:
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[
-                    {"role": "system", "content": "You are an AI that classifies questions into 'technical' or 'general'."},
+                    {"role": "system",
+                     "content": "You are an AI that classifies questions into 'technical' or 'general'."},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=5,
@@ -144,7 +147,7 @@ class ReflectiveDialogueSystem:
         prompt = (
             f"Based on the following user input, determine a one-word category that best describes it.\n\nInput: '{user_input}'"
         )
-        
+
         try:
             response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
@@ -225,9 +228,10 @@ class ReflectiveDialogueSystem:
             )
         try:
             response = client.chat.completions.create(
-                model=self.gpt_model,  
+                model=self.gpt_model,
                 messages=[
-                    {"role": "system", "content": "You are an AI that provides helpful responses in a human-like manner."},
+                    {"role": "system",
+                     "content": "You are an AI that provides helpful responses in a human-like manner."},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=1000
