@@ -15,7 +15,6 @@ def run_system():
     memory = MemorySystem()
     rds = ReflectiveDialogueSystem(memory)
 
-    # Activate the session loop
     session_active = True
     while session_active:
         user_input = input("Enter a prompt: ")
