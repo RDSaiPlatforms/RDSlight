@@ -1,15 +1,10 @@
+[![Upload Python Package](https://github.com/RDSaiPlatforms/RDSlight/actions/workflows/python-publish.yml/badge.svg)](https://github.com/RDSaiPlatforms/RDSlight/actions/workflows/python-publish.yml)
 
 # RDS Light
 
 RDS Light is a simplified version of the Reflective Dialogue System (RDS), designed for lightweight use while retaining core functionalities such as sentiment analysis, memory retrieval, and thoughtful response generation. This system uses OpenAI's GPT-3.5-turbo model to generate responses and analyze sentiment based on user input.
 <img width="2992" alt="RDS" src="https://github.com/user-attachments/assets/041f220b-3e07-44c9-927c-282eb70176a1">
 
-
-## Current Release
-
-| Version | Release Date | Notes |
-|---------|--------------|-------|
-| 1.0.0   | 2024-0-30    | Initial release |
 ## Features
 - **Sentiment Analysis**: Determines if the user's input has a positive, negative, or neutral sentiment.
 - **Memory System**: Stores and retrieves relevant memories based on user input and previous interactions.
