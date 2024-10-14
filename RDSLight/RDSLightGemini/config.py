@@ -40,5 +40,3 @@ class GeminiClient:
 
 # Instantiate the client
 gemini_client = GeminiClient()
-
-#AIzaSyC33wjRWCHT9EsZSIaSzQHSyKG6fL7DjJY
