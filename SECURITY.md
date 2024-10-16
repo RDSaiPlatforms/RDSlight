@@ -4,7 +4,7 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.0L   | :white_check_mark: |
+| v1.0.0(beta)   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
@@ -20,7 +20,7 @@ Do not publicly disclose the vulnerability until we have had a chance to address
 Provide us with a reasonable time frame to fix the vulnerability before making any details public.
 
 ### Scope
-This policy applies to the repository torinriley/RDS. Vulnerabilities in third-party dependencies should be reported to the respective maintainers.
+This policy applies to the repository `https://github.com/RDSaiPlatforms/RDSlight.git`. Vulnerabilities in third-party dependencies should be reported to the respective maintainers.
 
 ## Security Measures
 We follow industry best practices to secure our code and infrastructure. These include but are not limited to:
