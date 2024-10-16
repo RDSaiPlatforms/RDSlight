@@ -1,4 +1,3 @@
-[![Upload Python Package](https://github.com/RDSaiPlatforms/RDSlight/actions/workflows/python-publish.yml/badge.svg)](https://github.com/RDSaiPlatforms/RDSlight/actions/workflows/python-publish.yml)
 
 # RDS Light
 
