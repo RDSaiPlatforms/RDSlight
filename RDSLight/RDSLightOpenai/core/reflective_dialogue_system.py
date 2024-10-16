@@ -172,9 +172,6 @@ class ReflectiveDialogueSystem:
             return (
                 f"I'm considering the user's current input: '{user_input}', "
                 f"and reflecting on a past interaction where the user said: '{past_user_input}', "
-                f"and my response was: '{past_response}'. "
-                f"I'll use this to offer a more thoughtful response."
-                f"I should consider all the users past responses to help me craft a better response"
             )
         else:
             return f"I'm thinking about the user's current input: '{user_input}', and it's a new topic to explore."
@@ -196,7 +193,6 @@ class ReflectiveDialogueSystem:
                 f"Based on the user's input: '{user_input}', the detected sentiment '{sentiment}', "
                 f"and the internal reflection: '{internal_prompt}', "
                 f"how can I respond in a helpful and human-like way? Should I respond empathetically, positively, or neutrally?"
-                f"I should craft a response that is clear and helpful and reflect the users needs"
             )
 
         try:
